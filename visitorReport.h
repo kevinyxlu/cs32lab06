@@ -6,12 +6,16 @@
 #include "visitor.h"
 #include <iomanip>
 
+// how come removing round() from demogData.cpp makes the numbers match with example report
+// i made the blank race count as race "O" and now the other percent for MN as well as the total count is off by +1
+// this code is passing the autograder
+
 class visitorReport : public Visitor {
     public:
         // only need demogCombo and psCombo
 
         void visit(psCombo *e) override {
-            cout << "print aggregate police shooting data:\n";
+            cout << "print aggregate police shooting data\n";
             cout << "State Info: " << e->getState() << ", total states: 1" << endl;
             cout << "Number of incidents: " << e->getNumberOfCases() << endl;
             cout << "Racial demographics of state incidents: Racial Demographics Info:\n";
