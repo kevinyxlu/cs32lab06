@@ -28,7 +28,7 @@ class visitorReport : public Visitor {
         }
         void visit(demogData *e) override {
             cout << setprecision(2) << fixed;
-            cout << "print summary demog Data\n";
+            cout << "print summary demog Data:\n";
             cout << "Region info: comboData, " << e->getState() << endl;
             cout << "Education info:\n";
             cout << "(Bachelor or more): " << ((double)e->getCountBAPlus()/(double)e->getPop()) * 100.00 << "% and total: " << e->getCountBAPlus() << endl;
