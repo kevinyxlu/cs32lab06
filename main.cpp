@@ -1,3 +1,6 @@
+// CS32 lab06
+// Completed by: Kevin Lu and Kevin Lai
+
 #include <iostream>
 #include <string>
 #include <fstream>
